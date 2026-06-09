@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anotherPraktikum</title>
+</head>
+<body>
+    <script>
+        // let a = 10;
+        // console.log(a);
+        // a = 12;
+        // console.log(a);
+        // let b = a + a;
+        // console.log(b);
+
+    //     let usersInput = prompt("Siapa nama kamu?");
+    //     alert("Halo " + usersInput);
+
+    //     let user = confirm();
+    //     console.log(user)
+
+    console.log()
+
+    const usernameUser = "Gilang";
+    let user = confirm("Apakah kamu ingin bermain game?");
+    console.log(user)
+    let usersInput = prompt("Masukkan nama kamu");
+    if (user === true) {
+        alert("Halo, " + user + " Selamat datang di game ini!");
+    } else {
+        alert("Oke, sampai jumpa lagi!");
+    }
+
+    function myGame() {
+        let start;
+
+        while (true) {
+            let shouldContinue = confirm("Lets start begin !");
+            
+            if (shouldContinue === true) {
+                
+                let ask_1 = prompt("What value 2 + 2 =  ?");
+                
+                if (ask_1 == 4) {
+                    alert("Correct answer, lets move another question");
+                    
+                    let ask_2 = prompt("What value 9 * 12 = ?");
+                    if (ask_2 == 108) {
+                        alert("Alright, you are Genius. Are you human or Robot?");
+                        alert("Congrats, you are the world champions");
+                    } else {
+                        alert("You are really dumb, you do not even know the answer of 9 * 12, how can you survive in this world?");
+                    }
+                    break; 
+                    
+                } else {
+                    alert("You are wrong, asshole");
+                    break; 
+                }
+            } else {
+                start = "You are stopped this game";
+                alert(start);
+                break;
+            }
+        }
+    }
+        </script>
+
+    <button onclick="myGame()">Play the Games</button>
+    Hi, This is Praktikum 4 from class 4D Pemograman Web
+</body>
+</html>
